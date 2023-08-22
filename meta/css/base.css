@@ -56,15 +56,12 @@ main iframe {
 }
 
 .portada{
-    color: blue;
     background-image: url(../img/port.png);
-    background-size: 35%;
+    background-size: 250px;
     background-repeat: no-repeat;
     background-position-x: 50%;
-    background-position-y: 50%;
-    width: 50%;
-    height: 60vh;
-    margin: 20vh 25%;
+    height: 250px;
+    margin: 20vh auto;
 }
 
 #editor {
