@@ -1,0 +1,11 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="60" height="60">
+	<title>text0</title>
+	<defs>
+		<image  width="60" height="60" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8AQMAAAAAMksxAAAAAXNSR0IB2cksfwAAAANQTFRFiYmJN7sFUwAAAA9JREFUeJxjYBgFowA7AAACHAAB7ge4+gAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		.s0 { opacity: .5;fill: #306477 } 
+	</style>
+	<use id="Background" href="#img1" x="0" y="0"/>
+	<path id="Forma 3" class="s0" d="m0 60l60-60v60z"/>
+</svg>
