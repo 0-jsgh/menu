@@ -4,4 +4,7 @@ En:
 Page made by Johan Sebastian Gomez Hernandez (Contact: josegonandez@gmail.com - jsgh@mail.com)
 
 Es:
-Pagina hecha por Johan Sebastian Gomez Hernandez (Contacto: josegonandez@gmail.com - jsgh@mail.com)
+Página hecha por Johan Sebastian Gomez Hernandez (Contacto: josegonandez@gmail.com - jsgh@mail.com)
+
+Pt:
+Página feita por Johan Sebastian Gomez Hernandez (contato:  josegonandez@gmail.com - jsgh@mail.com)
