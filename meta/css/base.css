@@ -124,11 +124,20 @@ main iframe {
     text-align: center;
 }
 
+.qr section {
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: rgba(48,100,119,1);
+    margin: 20px auto;
+    width: 440px;
+    height: 440px;
+    padding: 20px;
+}
+
 #codigoQR {
+    background-color: black;
     width: 400px;
-    margin: 15px auto;
-    border-radius: 0;
-    overflow: hidden;
+    height: 400px;
 }
 
 #generar {
