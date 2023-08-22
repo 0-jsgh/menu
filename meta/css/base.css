@@ -13,7 +13,7 @@ body {
 
 header {
     text-align: center;
-    background-color: #306477;
+    background-color: rgba(48,100,119,1);
 }
 
 header li {
@@ -25,16 +25,17 @@ header ul > li {
 }
 
 header ul li a {
-    background-color: #306477;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    background-color: rgba(48,100,119,0.8);
     display: block;
     width: 150px;
-    padding: 22px 0;
+    padding: 15px 0;
     text-decoration: none;
     margin: 0 -3px;
 }
 
 header ul li a:hover {
-    background-color: #303030;
+    background-color: rgba(48,48,48,0.8);
 }
 
 header li > ol {
@@ -52,7 +53,7 @@ main {
 main iframe {
     float: left;
   border: none;
-  height: 90vh;
+  height: 92vh;
 }
 
 .portada{
@@ -156,4 +157,101 @@ main iframe {
     margin: 20px 0; padding:12px;
     text-align: center;
     color: black;
+}
+
+.cat{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cat img {
+    width: 100%;
+}
+
+.cat h1 {
+    text-shadow:3px 2px 4px black;
+    margin: 15px;
+    font-size: 30px;
+}
+
+.cat a {
+    overflow: hidden;
+    width: 300px;
+    margin: 10px 5px;
+    display: inline-block;
+    border:2px solid #303030;
+    border-radius: 16px;
+    height: 446px;
+}
+
+.cat a:hover {
+    border-color: white;
+    box-shadow: 2px 2px 2px black;
+}
+
+.menu{
+    background-color:rgba(48,100,119,1);
+    position: absolute;
+    top: 2vh;
+    text-align: center;
+    margin: 0 10px;
+    width: 18%;
+}
+
+.menu li a{
+    text-decoration: none;
+    border-bottom: 2px solid rgba(48,48,48,0.8);
+    border-left: 2px solid rgba(48,48,48,0.8);
+    display: inline-block;
+    background-color:rgba(48,100,119,0.8);
+    width: 100%;
+    padding: 12px 0;
+    font-size: 18px;
+}
+.menu a:hover{
+    color:#7db9cf;
+    background-color:rgba(48,48,48,0.8);
+}
+.menu li ol{
+    display: none;
+    width: 150%;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu li:hover > ol{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.menu ol li{
+    width: 50%;
+    float: left;
+}
+
+.menu2 li ol{
+    width: 300%;
+}
+
+.menu2 li ol li{
+    width: 25%;
+}
+
+.largo{
+    font-size: 18px;
+    width: 100%;
+}
+.rep{
+    border-radius: 15px;
+    position: absolute;
+    top:2vh;
+    left:20%;
+    display:inline-block;
+    width: 76%;
+    margin: 0 2%;
+    height: 90vh;
 }
