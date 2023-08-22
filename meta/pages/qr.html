@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/qrcode.js"></script>
+    <link rel="stylesheet" href="../css/base.css">
+    <title>Generador de Código QR</title>
+</head>
+<body class="qr">
+    
+    <input type="text" id="texto" placeholder="Ingrese Texto...">
+    <button id="generar">Crear</button>
+    <div id="codigoQR"></div>
+
+    <script>
+        const generarBtn = document.getElementById('generar');
+        const textoInput = document.getElementById('texto');
+        const codigoQRDiv = document.getElementById('codigoQR');
+
+        generarBtn.addEventListener('click', () => {
+            const texto = textoInput.value;
+            
+            if (texto) {
+                // Elimina el código QR anterior, si existe
+                codigoQRDiv.innerHTML = '';
+                
+                // Crea un nuevo elemento para el código QR
+                const qrCode = new QRCode(codigoQRDiv, {
+                    text: texto,
+                    width: 400,
+                    height: 400,
+                });
+            } else {
+                alert('Por favor, ingrese un texto.');
+            }
+        });
+    </script>
+</body>
+</html>

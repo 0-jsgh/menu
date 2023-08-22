@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+</head>
+<body class="calcu">
+<section>
+    <input type="text" id="resultado" readonly>
+    
+    <div>
+        <button onclick="agregarCaracter('(')">(</button>
+        <button onclick="agregarCaracter(')')">)</button>
+        <button onclick="borrar()">C</button>
+        <button onclick="agregarCaracter('/')">/</button>
+    </div>
+    
+    <div>
+        <button onclick="agregarNumero('7')">7</button>
+        <button onclick="agregarNumero('8')">8</button>
+        <button onclick="agregarNumero('9')">9</button>
+        <button onclick="agregarCaracter('*')">*</button>
+    </div>
+    
+    <div>
+        <button onclick="agregarNumero('4')">4</button>
+        <button onclick="agregarNumero('5')">5</button>
+        <button onclick="agregarNumero('6')">6</button>
+        <button onclick="agregarCaracter('-')">-</button>
+    </div>
+    
+    <div>
+        <button onclick="agregarNumero('1')">1</button>
+        <button onclick="agregarNumero('2')">2</button>
+        <button onclick="agregarNumero('3')">3</button>
+        <button onclick="agregarCaracter('+')">+</button>
+    </div>
+    
+    <div>
+        <button onclick="agregarNumero('0')">0</button>
+        <button onclick="agregarCaracter('.')">.</button>
+        <button onclick="calcular()">=</button>
+        <button onclick="borrar2()">CE</button>
+    </div>
+</section>
+    <script>
+        let entrada = '';
+        
+        function actualizarPantalla() {
+            document.getElementById('resultado').value = entrada;
+        }
+        
+        function agregarCaracter(caracter) {
+            entrada += caracter;
+            actualizarPantalla();
+        }
+        
+        function agregarNumero(numero) {
+            entrada += numero;
+            actualizarPantalla();
+        }
+        
+        function borrar() {
+            entrada = entrada.slice(0, -1);
+            actualizarPantalla();
+        }
+        
+        function borrar2() {
+            entrada = "";
+            actualizarPantalla();
+        }
+        
+        function calcular() {
+            try {
+                entrada = eval(entrada).toString();
+            } catch (error) {
+                entrada = 'Error';
+            }
+            
+            actualizarPantalla();
+        }
+        
+        // Permitir entrada desde el teclado
+        document.addEventListener('keydown', (event) => {
+            const tecla = event.key;
+            
+            if (tecla.match(/[0-9()+\-*/.]/)) {
+                event.preventDefault(); // Evitar que se ingresen caracteres directamente
+                agregarCaracter(tecla);
+            } else if (tecla === 'Enter') {
+                event.preventDefault();
+                calcular();
+            } else if (tecla === 'Backspace') {
+                event.preventDefault();
+                borrar();
+            }
+        });
+    </script>
+</body>
+</html>
+
