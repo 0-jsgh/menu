@@ -1,4 +1,4 @@
-# menu-desplegable
+# menu
 
 ### English:
 dropdown menu easy to implement on your website and with responsive design.
