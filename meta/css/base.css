@@ -29,7 +29,7 @@ header ul li a {
     background-color: rgba(48,100,119,0.8);
     display: block;
     width: 150px;
-    padding: 15px 0;
+    padding: 15px 0px;
     text-decoration: none;
     margin: 0 -3px;
 }
@@ -42,18 +42,25 @@ header li > ol {
     display: none;
 }
 
+header ol > li {
+    position: relative;
+}
+
 header li:hover > ol {
     display: block;
     position: absolute;
 }
 
-main {
+header ol > li > ol {
+    left: 150px;
+    top:0;
 }
 
 main iframe {
+    background-color: white;
     float: left;
-  border: none;
-  height: 92vh;
+    border: none;
+    height: 92vh;
 }
 
 .portada{
